@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #0b1021;
+  color: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.page__header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.page__header p {
+  margin: 0;
+  color: #cfd4e1;
+}
+
+.editor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.editor__pane {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  background: #111827;
+  min-height: 420px;
+}
+
+.editor__pane-header {
+  padding: 12px 14px;
+  border-bottom: 1px solid #1f2937;
+  font-weight: 600;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.editor__textarea {
+  flex: 1;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  resize: vertical;
+}
+
+.editor__textarea:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: -2px;
+}
+
+.editor__preview {
+  padding: 14px;
+  color: #e5e7eb;
+}
+
+.editor__preview pre {
+  background: #0b1021;
+  border-radius: 6px;
+  padding: 12px;
+  overflow: auto;
+}
+
+.editor__preview code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.editor__preview a {
+  color: #60a5fa;
+}
