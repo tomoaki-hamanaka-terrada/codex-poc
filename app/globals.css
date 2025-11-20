@@ -40,13 +40,19 @@ body {
   align-items: stretch;
 }
 
+.editor__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .editor__pane {
   display: flex;
   flex-direction: column;
   border: 1px solid #1f2937;
   border-radius: 10px;
   background: #111827;
-  min-height: 420px;
+  min-height: 220px;
 }
 
 .editor__pane-header {
@@ -91,4 +97,19 @@ body {
 
 .editor__preview a {
   color: #60a5fa;
+}
+
+.mermaid-preview {
+  min-height: 320px;
+}
+
+.mermaid-preview svg {
+  width: 100%;
+  height: auto;
+}
+
+.mermaid-error {
+  color: #fca5a5;
+  margin: 0;
+  padding: 0 14px 12px;
 }
